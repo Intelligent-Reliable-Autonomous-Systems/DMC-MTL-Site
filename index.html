@@ -60,7 +60,7 @@
           <h1 class="title is-1 publication-title">A Hybrid Modeling Framework for Crop Prediction Tasks vai Dynamic Parameter Calibration and Multi-Task Learning</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://intelligent-reliable-autonomous-systems.github.io/WOFOSTGym-Site/">William Solow<sup>1</sup>, Paola Pesantez-Cabrera<sup>2</sup>, Markus Keller<sup>2</sup>, Lav Khot<sup>2</sup>, Sandhya Saisubramanian<sup>1</sup>, Alan Fern</a><sup>1</sup>,</span>
+              <a href="https://intelligent-reliable-autonomous-systems.github.io/DMC-MTL-Site/">William Solow<sup>1</sup>, Paola Pesantez-Cabrera<sup>2</sup>, Markus Keller<sup>2</sup>, Lav Khot<sup>2</sup>, Sandhya Saisubramanian<sup>1</sup>, Alan Fern</a><sup>1</sup>,</span>
           </div>
 
           <div class="is-size-5 publication-authors">
@@ -72,7 +72,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2603.15411"
+                <a href="https://ijcai.org/proceedings/2026/826"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -131,21 +131,22 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-          Accurate prediction of crop states (e.g., phenology stages and cold hardiness) is essential for timely 
-          farm management decisions such as irrigation, fertilization, and canopy management to optimize crop 
-          yield and quality. While traditional biophysical models can be used for season-long predictions, they 
-          lack the precision required for site-specific management. Deep learning methods are a compelling 
-          alternative, but can produce biologically unrealistic predictions and require large-scale data. We 
-          propose a hybrid modeling approach that uses a neural network to parameterize a differentiable 
-          biophysical model and leverages multi-task learning for efficient data sharing across crop cultivars 
-          in data limited settings. By predicting the parameters of the biophysical model, our approach improves 
-          the prediction accuracy while preserving biological realism. Empirical evaluation using real-world and 
-          synthetic datasets demonstrates that our method improves prediction accuracy by 60% for phenology and 
-          40% for cold hardiness compared to deployed biophysical models. 
+          Accurate daily predictions of cold hardiness in woody plants are critical in regions where freezing 
+          temperatures can damage dormant buds and reduce seasonal yield. Existing biophysical, hybrid, and deep 
+          learning models have shown high predictive accuracy when trained on local data but remain largely 
+          \emph{site-specific}. The limited availability of cold hardiness data, coupled with the lack of 
+          principled methods for transferring cold hardiness predictions to new regions and cultivars, has limited 
+          the broader adoption and practical utility of these approaches, particularly in data-scarce regions. To 
+          address these limitations, we propose a cold hardiness prediction framework that learns a transferable 
+          latent representation by capturing region-specific variation through learned embeddings. To enable 
+          prediction in previously unseen regions, we infer embeddings from (1) text descriptions of the cultivar 
+          and growing region, and (2) limited historical observations, supporting both zero-shot and few-shot 
+          transfer. Experiments on datasets from six regions across North America demonstrate that our approach 
+          consistently outperforms state-of-the-art cold hardiness prediction methods, yielding more accurate 
+          predictions and substantially improving transfer to data-scarce regions.
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
 
 
 
@@ -155,15 +156,15 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{solow_hybrid_2026,
-      title={A Hybrid Modeling Framework for Crop Prediction Tasks via Dynamic Parameter Calibration and Multi-Task Learning},
-      author={William Solow, Paola Pesantez-Cabrera, Markus Keller, Lav Khot, Sandhya Saisubramanian and Alan Fern},
-      year={2026},
-      eprint={2603.15411},
-      archivePrefix={arXiv},
-      primaryClass={cs.AI},
-      url={https://arxiv.org/abs/2603.15411},
-   }
+    <pre><code>@inproceedings{solow2026,
+  title     = {A Hybrid Modeling Framework for Crop Prediction Tasks via Dynamic Parameter Calibration and Multi-Task Learning},
+  author    = {Solow, William and Pesantez-Cabrera, Paola and Keller, Markus and Khot, Lav and Saisubramanian, Sandhya and Fern, Alan},
+  booktitle = {Proceedings of the Thirty-Fifth International Joint Conference on
+               Artificial Intelligence, {IJCAI-26}},
+  pages     = {7428--7436},
+  year      = {2026},
+  month     = {8},
+}
   </code></pre>
   </div>
 </section>
